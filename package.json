@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "files": ["dist"],
+  "scripts": {
+    "prepare": "tsc -p tsconfig.json",
+    "test": "mocha -r ts-node/register test/**/*.ts",
+    "watch": "tsc -w -p tsconfig.json",
+    "prettier": "prettier -c src/**/*.ts test/**/*.ts",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint --fix src/**/*.ts"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.2",
+    "@types/mocha": "^5.2.7",
+    "@typescript-eslint/eslint-plugin": "^2.2.0",
+    "@typescript-eslint/parser": "^2.2.0",
+    "chai": "^4.2.0",
+    "eslint": "^6.3.0",
+    "eslint-config-prettier": "^6.2.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "mocha": "^6.2.0",
+    "prettier": "^1.18.2",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.6.2"
+  }
+}
